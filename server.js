@@ -22,11 +22,6 @@ app.use(express.json());
 // Routes
 app.use("/api/users", userRoutes);
 
-app.use("/api/products", (req, res) => {
-  return res.status(200).json({
-    message: 'This is new feature change, a new route for products'
-  })
-});
 
 app.use("/api/products", (req, res) => {
   return res.status(200).json({
